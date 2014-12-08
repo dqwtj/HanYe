@@ -1,0 +1,59 @@
+body{ margin: 0px; padding: 0px; background: #000000; }
+a, a:hover, a:visited{ text-decoration: none; }
+img { width: 100%; height: auto; }
+
+.clear { clear: both; }
+
+#rundiv {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.wrap {
+  overflow: hidden;
+  position: relative;
+}
+.wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+
+.navbar{ position: fixed; z-index: 2000; background: #000; border-bottom: solid #3d3629 1px; width: 100%; text-align: center; vertical-align: middle; padding-top: 20px; padding-bottom: 20px;}
+.navbar a { color: #fff; display: inline-block; width: 20%; font-size: 12px; font-weight: 100; }
+.navbar .logo{ display: inline-block; width: 6%; padding: 0% 2%; padding-right: 16px;}
+.navbar .active img{ display: inline-block; width: 10px; margin-left: 2px; }
+.navbar .empty img{ display: inline-block; width: 10px; margin-left: 2px; }
+
+.panel{ width: 94%; margin-left: 3%; border: 1px solid #c2ab81; border-top: none; }
+.panel .header{ background: #c2ab81; }
+.panel .header h1{ color: #000; font-size: 14px; padding: 10px; }
+.panel .details{ padding: 20px; }
+
+.infos{ width: 94%; margin-left: 3%; margin-top: 30px; }
+.infos .header{ background: #e3cca2; }
+.infos .header h1{ color: #000; font-size: 14px; padding: 10px; }
+.infos .details{ padding: 20px; background: #fff; margin-top: -10px; }
+.infos .details input { display: inline-block; box-shadow: none; border: 1px solid #888; text-indent: 40px; padding: 5px 0px; width: 100%; display: block; margin: 10px 0px; }
+.infos .details .name { background: url('../img/name.png'); background-size: 8% 100%; background-repeat: no-repeat; }
+.infos .details .place { background: url('../img/place.png'); background-size: 10% 100%; background-repeat: no-repeat; }
+.infos .details .phone { background: url('../img/phone.png'); background-size: 5% 100%; background-repeat: no-repeat; background-position-x: 3%; }
+.infos .details p { display: inline-block; }
+.infos .hey { width: 50%; float: left; }
+.infos .hey p { margin: 0px; width: 60%; display: inline-block; }
+.infos .hey input { width: 30%; display: inline-block; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

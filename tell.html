@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>想说系列</title>
+	<meta content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width" name="viewport">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>	
+<body class="product">
+
+	<div class="navbar">
+		<a href="lock.html" class="empty">锁Lock<img src="../img/empty.png"></a>
+		<a href="tell.html" class="active">想说Tell<img src="../img/active.png"></a>
+		<a href="index.html" class="logo"><img src="../img/logo.png"></a>
+		<a href="buy-lock.html" class="empty">在线定制<img src="../img/empty.png"></a>
+		<a href="my.html" class="empty">我的订单<img src="../img/empty.png"></a>		
+	</div>
+
+  <div class="carousel">
+  <div id='rundiv'>
+      <div class='wrap'>
+        <div>
+          <img src="../img/lock-1.jpg" />
+          <div class="information">
+            <img src="../img/black-layer.png" style="position: absolute; bottom: 5%;">
+          </div>
+        </div>
+        <div>
+          <img src="../img/lock-2.jpg" />
+          <div class="information">
+            <img src="../img/black-layer.png" style="position: absolute; bottom: 5%;">
+          </div>
+        </div>
+        <div style="background: #fff;">
+          <img src="../img/lock-3.jpg" />
+          <div class="information">
+            <img src="../img/white-layer.png" style="position: absolute; bottom: 5%;">
+          </div>
+        </div>
+        <div style="background: #fff;">
+          <img src="../img/lock-4.jpg" />
+          <div class="information">
+            <img src="../img/white-layer.png" style="position: absolute; bottom: 5%;">
+          </div>
+        </div>
+        <div style="background: #fff;">
+          <img src="../img/lock-4.jpg" />
+          <div class="information">
+            <img src="../img/white-layer.png" style="position: absolute; bottom: 5%;">
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="rundivBar">
+      <ol id="rundivNav">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ol>
+  </div>
+  </div>
+  <div class="info"><img src="../img/i-1.png"></div>
+
+<script src="../javascript/jquery.js"></script>
+<script src="../javascript/rundiv.min.js"></script>
+<script>
+var elem = document.getElementById('rundiv');
+window.rundiv = Rundiv(elem, {
+   hasNav:true,
+   startSlide: 1,
+   auto: 4000,
+   continuous: true,
+  // disableScroll: true,
+  // stopPropagation: true,
+  // callback: function(index, element) {},
+  // transitionEnd: function(index, element) {}
+});
+rundiv.linkNav("rundivNav");
+
+$(document).ready(function(){
+  $(".info").click(function(){
+    $(".information").slideToggle();
+  });
+});
+
+</script>
+</body>
+</html>
